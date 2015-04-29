@@ -8,10 +8,6 @@ def reading_from_histogram_file():
     path = "histogram.txt"
     f = open(path, 'r')
     text = f.read().split('\n')
-    text.remove(text[163])
-    text.remove(text[430])
-    text.remove(text[1127])
-    print (text)
     f.close()
     for i in range(0, len(text)):
         if count_substrings(text[i],"Apache") > 0:
@@ -27,5 +23,3 @@ def reading_from_histogram_file():
 
     fp = open("hist.json", 'w')
     json.dump(h.my_dict, fp)
-
-reading_from_histogram_file()

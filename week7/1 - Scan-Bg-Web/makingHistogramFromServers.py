@@ -23,5 +23,3 @@ def reading_from_histogram_file():
 
     fp = open("hist.json", 'w')
     json.dump(h.my_dict, fp)
-
-reading_from_histogram_file()

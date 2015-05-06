@@ -7,3 +7,5 @@ def count_substrings(haystack, needle):
         else:
             haystack = haystack[1:]
     return count
+
+print(count_substrings("aaaaaaaaaaaaaApache", "Apache"))
